@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #fef2f2;
+  --color-brand-100: #fee2e2;
+  --color-brand-200: #fecaca;
+  --color-brand-300: #fca5a5;
+  --color-brand-400: #f87171;
+  --color-brand-500: #ef4444;
+  --color-brand-600: #e63946;
+  --color-brand-700: #b91c1c;
+  --color-brand-800: #991b1b;
+  --color-brand-900: #7f1d1d;
+
+  --color-navy-50: #f4f6f8;
+  --color-navy-100: #e1e6ed;
+  --color-navy-200: #c5d2df;
+  --color-navy-300: #9cb5c9;
+  --color-navy-400: #6b90ab;
+  --color-navy-500: #4d7490;
+  --color-navy-600: #3e5c75;
+  --color-navy-700: #334b60;
+  --color-navy-800: #2d3f50;
+  --color-navy-900: #1d3557;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-800 bg-slate-50 font-sans;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+}
